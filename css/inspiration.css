@@ -52,4 +52,6 @@ html,
             justify-content: normal;
         }
 
-        
+    .btn-primary {
+        margin-bottom: 10px;
+    }
