@@ -1,0 +1,55 @@
+#photoContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    gap: 16px;
+}
+
+html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            min-height: 100vh; /* Cambiado a min-height para evitar problemas de altura en pantallas pequeñas */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .img-fluid {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .text-overlay {
+            /* Añadido un color de fondo para mejorar la legibilidad del texto */
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+        .card-img-container {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .card-img-container img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+
+        #categories {
+            margin-top: 20px;
+        }
+
+        .container {
+            flex-direction: column;
+            justify-content: normal;
+        }
+
+        
