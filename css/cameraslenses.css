@@ -68,6 +68,10 @@ footer {
  .item {
     max-width: 300px; /* Ajusta el ancho máximo de las cards según tus preferencias */
     margin-bottom: 20px; /* Espacio entre las cards */
+    
+}
+.caption {
+    height: 100%;
 }
 
 .list-group-image {
