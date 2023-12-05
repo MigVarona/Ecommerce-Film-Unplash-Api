@@ -60,9 +60,26 @@ footer {
   margin-top: 20px;
 }
 
- .container {
-    padding: 10px;
- }  
+.container {
+    text-align: center; /* Centra el contenido dentro del contenedor */
+    margin-top: 20px; /* Ajusta el margen superior según tus preferencias */
+}
   
+ .item {
+    max-width: 300px; /* Ajusta el ancho máximo de las cards según tus preferencias */
+    margin-bottom: 20px; /* Espacio entre las cards */
+}
 
+.list-group-image {
+    max-width: 100%; /* La imagen ocupará el ancho máximo de su contenedor */
+    height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
+}
 
+.group.inner.list-group-item-heading {
+    font-size: 14px; /* Ajusta el tamaño de la fuente del título */
+}
+
+.group.inner.list-group-item-text,
+.lead {
+    font-size: 12px; /* Ajusta el tamaño de la fuente del texto y el precio */
+}
