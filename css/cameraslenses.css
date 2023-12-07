@@ -93,3 +93,13 @@ footer {
 .modal-body {
     margin-top: 25px;
 }
+
+.custom-link {
+    color: black !important;
+    text-decoration: none !important; /* Elimina la subraya predeterminada */
+}
+
+/* Estilo para cambiar el color del enlace cuando se pasa el mouse por encima */
+.custom-link:hover {
+    color: darkgray !important;
+}

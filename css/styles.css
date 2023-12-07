@@ -42,3 +42,6 @@ html,
 a {
     text-decoration: none;
 }
+
+.card-text {
+color: black !important;}
