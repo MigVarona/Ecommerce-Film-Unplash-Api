@@ -6,16 +6,6 @@
 
 Viva Film is your go-to platform for all things analog photography. Dive into a world of vintage cameras, discover second-hand treasures, and explore film-related services. Immerse yourself in the charm of film photography with Viva Film.
 
-## Table of Contents
-
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
-- [Acknowledgments](#acknowledgments)
-- [Screenshots](#screenshots)
 
 ## Features
 
