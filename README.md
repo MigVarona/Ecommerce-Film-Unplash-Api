@@ -3,6 +3,7 @@
 Welcome to Viva Film, a website dedicated to film enthusiasts! Explore our collection of cameras, lenses, film examples, and more. Capture the essence of film photography with our curated selection and services.
 
 ## Table of Contents
+![Captura de pantalla 2023-11-29 100750](https://github.com/MigVarona/vivafilm/assets/146460162/e43769b3-5869-40ff-93b0-400969134098)
 
 - [Features](#features)
 - [Getting Started](#getting-started)
@@ -21,8 +22,7 @@ Welcome to Viva Film, a website dedicated to film enthusiasts! Explore our colle
 
 1. Clone the repository:
 
-   ```![diapos](https://github.com/MigVarona/vivafilm/assets/146460162/e0eeb5ea-313c-4e62-8456-e33b66991424)
-bash
+
    git clone https://github.com/Migvarona/viva-film.git
 
    
