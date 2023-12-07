@@ -25,7 +25,7 @@ Welcome to Viva Film, a website dedicated to film enthusiasts! Explore our colle
    git clone https://github.com/Migvarona/viva-film.git
 
    
-En el ejemplo anterior, se usa la etiqueta `![Viva Film Logo](img/camaraslow.jpg)` para insertar una imagen. Asegúrate de proporcionar la ruta correcta a tu imagen. Además, puedes utilizar imágenes en línea incluyendo la URL de la imagen en lugar de una ruta local.
+En el ejemplo anterior, se usa la etiqueta `![Viva Film Logo](/img/camaraslow.jpg)` para insertar una imagen. Asegúrate de proporcionar la ruta correcta a tu imagen. Además, puedes utilizar imágenes en línea incluyendo la URL de la imagen en lugar de una ruta local.
 
 # vivafilm
 Film lab project
