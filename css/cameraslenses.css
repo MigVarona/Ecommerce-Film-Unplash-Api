@@ -66,7 +66,7 @@ footer {
 }
   
  .item {
-    max-width: 250px; /* Ajusta el ancho máximo de las cards según tus preferencias */
+    max-width: 200px; /* Ajusta el ancho máximo de las cards según tus preferencias */
     margin-bottom: 5px; /* Espacio entre las cards */
     margin-left: 0.3rem;
      margin-right: 0.3rem;
@@ -93,4 +93,3 @@ footer {
 .modal-body {
     margin-top: 25px;
 }
-
