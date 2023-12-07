@@ -67,7 +67,7 @@ footer {
   
  .item {
     max-width: 175px; /* Ajusta el ancho máximo de las cards según tus preferencias */
-    margin-bottom: 20px; /* Espacio entre las cards */
+    margin-bottom: 5px; /* Espacio entre las cards */
     
 }
 .caption {
