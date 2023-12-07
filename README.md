@@ -1,7 +1,7 @@
 # Viva Film
 
 <p align="center">
-  <img src="/path/to/project_logo.png" alt="Viva Film Logo">
+  <img src="/img/Kodakfilm.jpg" alt="Viva Film Logo">
 </p>
 
 ## Overview
