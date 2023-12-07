@@ -1,94 +1,59 @@
-# Viva Film Lab
+# Viva Film
 
 <p align="center">
-  <img src="/path/to/lab_logo.png" alt="Viva Film Lab Logo">
+  <img src="/path/to/project_logo.png" alt="Viva Film Logo">
 </p>
 
 ## Overview
 
-Viva Film Lab is a dedicated film processing and development service, bringing your analog photos to life. With our state-of-the-art facilities and experienced team, we provide professional film processing services for various film formats.
+Viva Film is a web project that showcases a film community platform, highlighting film examples, cameras and lenses, and offering inspiration for film enthusiasts. The project aims to bring together individuals passionate about film photography.
 
 ## Table of Contents
 
 - [Features](#features)
 - [Getting Started](#getting-started)
-- [Services](#services)
-- [Submission Process](#submission-process)
-- [Turnaround Time](#turnaround-time)
-- [Pricing](#pricing)
+- [Film Examples](#film-examples)
+- [Cameras & Lenses](#cameras--lenses)
+- [Inspiration](#inspiration)
 - [Contact](#contact)
 - [Acknowledgments](#acknowledgments)
 
 ## Features
 
-- **Film Processing:** High-quality development for different film formats.
-- **Print Services:** Order prints of your favorite film captures.
-- **Scan and Digitalize:** Digitize your analog photos for online sharing.
-- **Professional Lab:** Equipped with modern technology for precise processing.
+- **Film Showcase:** Explore a curated collection of stunning film examples.
+- **Camera & Lens Guide:** Discover information about various cameras and lenses.
+- **Inspiration Gallery:** Find inspiration for your next film photography project.
 
 ## Getting Started
 
-1. **Submit Your Film:**
-   - Package your exposed film securely.
-   - Fill out the submission form available on our website.
-   - Send your film to the address provided.
+1. **Visit the Website:**
+   - Go to [Viva Film](https://www.vivafilm.com).
 
-2. **Create an Account:**
-   - Visit our website and create an account.
-   - Track the status of your film submissions.
-   - Receive notifications at each processing stage.
+2. **Explore the Sections:**
+   - Navigate through Film Examples, Cameras & Lenses, and Inspiration.
 
-3. **View Your Scans:**
-   - Access digitalized versions of your photos.
-   - Download high-resolution scans from your account.
+3. **Join the Community:**
+   - Create an account to engage with the community.
+   - Share your own film photography work.
 
-## Services
+## Film Examples
 
-### Film Processing
+Explore a diverse collection of film photography examples submitted by the community. Click on each entry to view details about the film used, camera equipment, and the photographer's insights.
 
-Our lab provides professional film processing for various formats, including:
-- 35mm Film
-- Medium Format Film
-- Slide Film
+## Cameras & Lenses
 
-### Printing Services
+Get insights into different cameras and lenses used in film photography. Whether you're a beginner or an experienced photographer, this guide provides valuable information to enhance your photography skills.
 
-Order prints of your favorite film captures with customizable options:
-- Print Sizes
-- Paper Types
+## Inspiration
 
-### Digitalization
-
-Digitize your analog photos for online sharing and long-term preservation.
-
-## Submission Process
-
-1. **Online Form:**
-   - Complete the online submission form.
-   - Provide details about the film type and processing preferences.
-
-2. **Secure Packaging:**
-   - Package your film securely to prevent damage during transit.
-   - Include a copy of the submission form with your package.
-
-3. **Send to Viva Film Lab:**
-   - Ship your film to the address provided on the submission form.
-   - Use a reliable courier service for safe delivery.
-
-## Turnaround Time
-
-Our standard turnaround time is [X days], excluding shipping time. Expedited services are available upon request.
-
-## Pricing
-
-View our pricing details on our website or contact our customer service for a customized quote.
+Discover inspiration for your next film project. From composition ideas to unique film types, the Inspiration section aims to fuel your creativity and passion for film photography.
 
 ## Contact
 
-For inquiries, contact [Miguel Varona](mailto:migvaronag@gmail.com).
+For inquiries, feedback, or collaboration opportunities, reach out to [Your Name](mailto:your.email@example.com).
 
 ## Acknowledgments
 
-
 - [Unsplash](https://unsplash.com/) for providing high-quality images.
+- [Bootstrap](https://getbootstrap.com/) for the responsive web design framework.
 
