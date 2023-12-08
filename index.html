@@ -28,19 +28,28 @@
                     <li class="nav-item">
                         <a class="nav-link text-white" href="html/contact.html">Contact</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="html/cameraslenses.html">Cameras & lenses</a>
+    
+                    <!-- Menú desplegable "Cameras & lenses" -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="outline: none;">
+                            Cameras
+                        </a>
+                        <div class="dropdown-menu bg-black" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item text-white" href="html/cameraslenses.html" style="background-color: transparent !important;">Cameras & lenses</a>
+                            <a class="dropdown-item text-white" href="html/secondhand.html" style="background-color: transparent !important;">Second hand</a>
+                            <a class="dropdown-item text-white" href="html/rent.html" style="background-color: transparent !important;">Rent</a>
+                        </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="html/secondhand.html">Second hand</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="html/rent.html">Rent</a>
-                    </li>
+                    
+                    
+                    
+    
+                    
                 </ul>
             </div>
         </div>
     </nav>
+    
 
     <div class="img-container position-relative">
         <img src="img/camaras.jpg" class="img-fluid" alt="...">
@@ -75,9 +84,11 @@
 
             <div class="col-md-4 col-sm-6">
                 <div class="card h-100 border-0">
+                    <a href="html/rent.html">
                     <div class="card-body">
                         <p class="card-text">Rent your camera</p>
                     </div>
+                </a>
                 </div>
             </div>
             <!-- Repite la estructura similar para el resto de las tarjetas -->
