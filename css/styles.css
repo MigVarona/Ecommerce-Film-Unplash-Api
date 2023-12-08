@@ -46,4 +46,10 @@ a {
 .card-text {
 color: black !important;}
 
+.icon-svg {
+    width: 24px; /* Ajusta el tamaño según sea necesario */
+    height: 24px;
+    fill: white; /* Color del ícono */
+    margin-right: 10px; /* Ajusta el margen entre los iconos según sea necesario */
+}
 
