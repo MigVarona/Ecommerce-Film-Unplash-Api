@@ -1,0 +1,32 @@
+[
+  {
+    "titulo": "KODAK Portra 400",
+    "contenido": "Kodak Professional Portra 400 is a high-speed color negative film balanced for daylight. It offers a smooth and natural color palette, with vivid saturation and low contrast for accurate skin tones and consistent results.",
+    "imagen": "../img/1.webp",
+    "imagenes": [
+      "../img/10.jpg",
+      "../img/11.jpeg",
+      "../img/12.jpg"
+    ]
+  },
+  {
+    "titulo": "ILFORD DELTA 3200",
+    "contenido": "Información sobre la película 2",
+    "imagen": "../img/2.webp",
+    "imagenes": [
+      "../img/2-slide1.jpg",
+      "../img/2-slide2.jpg",
+      "../img/2-slide3.jpg"
+    ]
+  },
+  {
+    "titulo": "Película 3",
+    "contenido": "Información sobre la película 3",
+    "imagen": "../img/3.webp",
+    "imagenes": [
+      "../img/3-slide1.jpg",
+      "../img/3-slide2.jpg",
+      "../img/3-slide3.jpg"
+    ]
+  }
+]

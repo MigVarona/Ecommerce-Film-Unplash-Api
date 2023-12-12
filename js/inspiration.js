@@ -15,10 +15,16 @@ function loadRandomPhotos() {
         .then(data => {
             const photosHtml = data.map(photo => {
                 const artistName = photo.user.name;
+                const artistWeb = photo.user.links.html;
+                const photoSize = `${photo.width} x ${photo.height}`;
+                const downloadLink = photo.links.download;
+
                 return `
                     <div class="col-md-4 mb-4">
                         <img src="${photo.urls.regular}" alt="Unsplash Photo" class="img-fluid">
-                        <p>Artist: ${artistName}</p>
+                        <p>Artist: <a href="${artistWeb}" target="_blank">${artistName}</a></p>
+                        <p>Size: ${photoSize}</p>
+                        <p><a href="${downloadLink}" target="_blank">Download High-Res</a></p>
                     </div>`;
             }).join('');
 
@@ -38,7 +44,7 @@ function loadNextPage() {
 // Trigger the function when the page loads or when the category is changed
 loadRandomPhotos();
 categorySelect.addEventListener('change', () => {
-    currentPage = 1; // Reset page when category changes
+    currentPage = 1;
     loadRandomPhotos();
 });
 

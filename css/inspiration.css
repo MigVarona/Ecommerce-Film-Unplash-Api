@@ -120,4 +120,12 @@ html,
         width: 300px;
     }
     
-    
+    .mt-3 {
+        margin-top: 19rem!important;
+    }
+    .mb-4 {
+        margin-bottom: 5rem!important;
+    }
+    p {
+        margin-bottom: 0rem;
+    }

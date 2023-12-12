@@ -292,6 +292,34 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+        <!-- Asegúrate de incluir jQuery antes de este script -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<script>
+   $(document).ready(function() {
+  // Cargar el contenido del JSON al cargar la página
+  $.getJSON('cameras.json', function(data) {
+    // Iterar sobre las cámaras y agregar contenido a los modales
+    data.cameras.forEach(function(camera) {
+      var modalId = '#modal' + camera.id;
+
+      // Actualizar el contenido de cada modal
+      var modal = $(modalId);
+      modal.find('.modal-body img').attr('src', camera.imagen);
+      modal.find('.modal-footer button').text('Close');
+      modal.find('.modal-heading').text(camera.nombre);
+      modal.find('.modal-price').text('$' + camera.precio);
+      modal.find('.modal-description').text(camera.descripcion);
+
+      // Mostrar la descripción en la consola para depurar
+      console.log('Descripción en ' + modalId + ':', camera.descripcion);
+    });
+  });
+});
+
+    </script>
+    
+        
 
         
 </body>
