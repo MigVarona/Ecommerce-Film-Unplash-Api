@@ -27,7 +27,7 @@ Viva Film is a web project that showcases a film community platform, highlightin
 ## Getting Started
 
 1. **Visit the Website:**
-   - Go to [Viva Film](https://www.vivafilm.com).
+   - Go to [Viva Film](https://migvarona.github.io/vivafilm/).
 
 2. **Explore the Sections:**
    - Navigate through Film Examples, Cameras & Lenses, and Inspiration.
