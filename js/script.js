@@ -1,6 +1,6 @@
 $(document).ready(function() {
     // Utiliza fetch para cargar el JSON de manera asíncrona
-    fetch('contenido.json')
+    fetch('film.json')
       .then(response => response.json())
       .then(data => {
         // Itera sobre los elementos del JSON

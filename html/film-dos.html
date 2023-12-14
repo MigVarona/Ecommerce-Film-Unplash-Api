@@ -54,7 +54,7 @@
     <!-- Las tarjetas se cargarán aquí mediante el script -->
   </div>
 </div>
-<!--Footer-->
+
 
 <script
   src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
@@ -73,9 +73,9 @@ crossorigin="anonymous"></script>
 </body>
 </html>
 <script>
-     $(document).ready(function() {
+    $(document).ready(function() {
     // Utiliza fetch para cargar el JSON de manera asíncrona
-    fetch('../js/film.json')
+    fetch('../js/film-dos.json')
       .then(response => response.json())
       .then(data => {
         // Itera sobre los elementos del JSON
