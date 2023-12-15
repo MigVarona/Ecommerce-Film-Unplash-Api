@@ -190,6 +190,7 @@
         "../img/30.webp"
       ]
     },
+    
     {
       "titulo": "Kentmere 400",
       "contenido": "35mm, ISO 400, high speed, all purpose, black & white film. Suitable for all general photography applications.",
@@ -288,11 +289,66 @@
     {
       "titulo": "FUJI TIARA",
       "contenido": "Kodak Professional T-Max P3200 is an ultra-high-speed panchromatic black and white negative film characterized by its unique T-GRAIN emulsion.",
-      "imagen": "../img/118.webp",
+      "imagen": "../img/122.webp",
       "imagenes": [
-        "../img/119.webp",
-        "../img/120.webp",
-        "../img/121.webp"
+        "../img/127.webp",
+        "../img/128.webp",
+        "../img/129.webp"
+      ]
+      
+    },
+    {
+      "titulo": "FUJI TIARA",
+      "contenido": "Kodak Professional T-Max P3200 is an ultra-high-speed panchromatic black and white negative film characterized by its unique T-GRAIN emulsion.",
+      "imagen": "../img/123.webp",
+      "imagenes": [
+        "../img/124.webp",
+        "../img/125.webp",
+        "../img/126.webp"
+      ]
+      
+    },
+    {
+      "titulo": "FUJI TIARA",
+      "contenido": "Kodak Professional T-Max P3200 is an ultra-high-speed panchromatic black and white negative film characterized by its unique T-GRAIN emulsion.",
+      "imagen": "../img/130.webp",
+      "imagenes": [
+        "../img/131.webp",
+        "../img/132.webp",
+        "../img/133.webp"
+      ]
+      
+    },
+    {
+      "titulo": "FUJI TIARA",
+      "contenido": "Kodak Professional T-Max P3200 is an ultra-high-speed panchromatic black and white negative film characterized by its unique T-GRAIN emulsion.",
+      "imagen": "../img/135.webp",
+      "imagenes": [
+        "../img/136.webp",
+        "../img/137.webp",
+        "../img/138.webp"
+      ]
+      
+    },
+    {
+      "titulo": "FUJI TIARA",
+      "contenido": "Kodak Professional T-Max P3200 is an ultra-high-speed panchromatic black and white negative film characterized by its unique T-GRAIN emulsion.",
+      "imagen": "../img/139.webp",
+      "imagenes": [
+        "../img/140.webp",
+        "../img/141.webp",
+        "../img/142.webp"
+      ]
+      
+    },
+    {
+      "titulo": "FUJI TIARA",
+      "contenido": "Kodak Professional T-Max P3200 is an ultra-high-speed panchromatic black and white negative film characterized by its unique T-GRAIN emulsion.",
+      "imagen": "../img/143.webp",
+      "imagenes": [
+        "../img/144.webp",
+        "../img/145.webp",
+        "../img/147.webp"
       ]
       
     }

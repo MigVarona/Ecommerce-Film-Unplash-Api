@@ -51,3 +51,5 @@ categorySelect.addEventListener('change', () => {
 // Implementación básica de botón para cargar la siguiente página
 const loadMoreButton = document.getElementById('load-more-button');
 loadMoreButton.addEventListener('click', loadNextPage);
+
+
