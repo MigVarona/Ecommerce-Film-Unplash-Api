@@ -1,0 +1,63 @@
+[
+    {
+      "titulo": "CANON 1V",
+      "contenido": "The Canon EOS-1V is a 35mm film single-lens reflex (SLR) camera that was introduced by Canon in 2000. ",
+      "imagen": "../img/74.webp",
+      "imagenes": [
+        "../img/75.webp",
+        "../img/76.webp",
+        "../img/77.webp"
+      ]
+    },
+    {
+      "titulo": "CARL ZEISS 35MM",
+      "contenido": " Carl Zeiss is a renowned German manufacturer of optical systems.",
+      "imagen": "../img/78.webp",
+      "imagenes": [
+        "../img/79.webp",
+        "../img/80.webp",
+        "../img/81.webp"
+      ]
+    },
+    {
+      "titulo": "CONTAX T2",
+      "contenido": "The Contax T2 is a high-end 35mm film compact camera produced by the Japanese company Kyocera under the Contax brand.",
+      "imagen": "../img/85.webp",
+      "imagenes": [
+        "../img/82.webp",
+        "../img/83.webp",
+        "../img/84.webp"
+      ]
+    },
+    {
+      "titulo": "FUJI KLASSE",
+      "contenido": "The Fujifilm Klasse is a high-end 35mm film compact camera that was introduced by Fuji in the late 1990s.",
+      "imagen": "../img/86.webp",
+      "imagenes": [
+        "../img/87.webp",
+        "../img/88.webp",
+        "../img/89.webp"
+      ]
+    },
+    {
+      "titulo": "LEICA M2",
+      "contenido": "The Leica M2 is a classic 35mm rangefinder camera produced by the German company Leica.",
+      "imagen": "../img/90.webp",
+      "imagenes": [
+        "../img/91.webp",
+        "../img/92.webp",
+        "../img/93.webp"
+      ]
+    },
+    {
+      "titulo": "LEICA M4P",
+      "contenido": "The Leica M4-P is a 35mm film rangefinder camera produced by the German company Leica. It was introduced in 1980 and was part of the Leica M series.",
+      "imagen": "../img/94.webp",
+      "imagenes": [
+        "../img/95.webp",
+        "../img/96.webp",
+        "../img/97.webp"
+      ]
+    }
+  ]
+  
