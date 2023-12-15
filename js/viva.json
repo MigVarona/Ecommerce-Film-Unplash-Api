@@ -1,0 +1,301 @@
+[
+    {
+      "titulo": "CONTAX G1",
+      "contenido": "The Contax G1 is a 35mm film camera released by the German company Contax in the 1990s. ",
+      "imagen": "../img/50.webp",
+      "imagenes": [
+        "../img/56.webp",
+        "../img/57.webp",
+        "../img/58.webp"
+      ]
+    },
+    {
+      "titulo": "Contax ARIA",
+      "contenido": " CONTAX ARIA is the smallest , lightest  ever at 16.2 ounces. It is the perfect camera for wilderness exploration or family outings.",
+      "imagen": "../img/51.webp",
+      "imagenes": [
+        "../img/59.webp",
+        "../img/60.webp",
+        "../img/61.webp"
+      ]
+    },
+    {
+      "titulo": "NIKON 35TI",
+      "contenido": "The camera features a Nikon 35mm f/2.8 lens, providing excellent image quality and suitable for landscape.",
+      "imagen": "../img/52.webp",
+      "imagenes": [
+        "../img/62.webp",
+        "../img/63.webp",
+        "../img/64.webp"
+      ]
+    },
+    {
+      "titulo": "LEICA M3 Body",
+      "contenido": "The Leica M3 is a legendary 35mm rangefinder camera produced by the German manufacturer Leica from 1954 to 1967.",
+      "imagen": "../img/53.webp",
+      "imagenes": [
+        "../img/65.webp",
+        "../img/66.webp",
+        "../img/67.webp"
+      ]
+    },
+    {
+      "titulo": "C Zeiss Biogon 35mm",
+      "contenido": "The Zeiss Biogon 35mm is a popular lens produced by Carl Zeiss, a renowned German optics manufacturer.",
+      "imagen": "../img/54.webp",
+      "imagenes": [
+        "../img/68.webp",
+        "../img/69.webp",
+        "../img/70.webp"
+      ]
+    },
+    {
+      "titulo": "Leica Elmar",
+      "contenido": "The Leica Elmar is a series of camera lenses produced by the German manufacturer Leica Camera AG.",
+      "imagen": "../img/55.webp",
+      "imagenes": [
+        "../img/71.webp",
+        "../img/72.webp",
+        "../img/73.webp"
+      ]
+    },
+    {
+      "titulo": "CANON 1V",
+      "contenido": "The Canon EOS-1V is a 35mm film single-lens reflex (SLR) camera that was introduced by Canon in 2000. ",
+      "imagen": "../img/74.webp",
+      "imagenes": [
+        "../img/75.webp",
+        "../img/76.webp",
+        "../img/77.webp"
+      ]
+    },
+    {
+      "titulo": "CARL ZEISS 35MM",
+      "contenido": " Carl Zeiss is a renowned German manufacturer of optical systems.",
+      "imagen": "../img/78.webp",
+      "imagenes": [
+        "../img/79.webp",
+        "../img/80.webp",
+        "../img/81.webp"
+      ]
+      
+    },
+    {
+      "titulo": "CONTAX T2",
+      "contenido": "The Contax T2 is a high-end 35mm film compact camera produced by the Japanese company Kyocera under the Contax brand.",
+      "imagen": "../img/85.webp",
+      "imagenes": [
+        "../img/82.webp",
+        "../img/83.webp",
+        "../img/84.webp"
+      ]
+    },
+    {
+      "titulo": "FUJI KLASSE",
+      "contenido": "The Fujifilm Klasse is a high-end 35mm film compact camera that was introduced by Fuji in the late 1990s.",
+      "imagen": "../img/86.webp",
+      "imagenes": [
+        "../img/87.webp",
+        "../img/88.webp",
+        "../img/89.webp"
+      ]
+    },
+    {
+      "titulo": "LEICA M2",
+      "contenido": "The Leica M2 is a classic 35mm rangefinder camera produced by the German company Leica.",
+      "imagen": "../img/90.webp",
+      "imagenes": [
+        "../img/91.webp",
+        "../img/92.webp",
+        "../img/93.webp"
+      ]
+    },
+    {
+      "titulo": "LEICA M4P",
+      "contenido": "The Leica M4-P is a 35mm film rangefinder camera produced by the German company Leica. It was introduced in 1980 and was part of the Leica M series.",
+      "imagen": "../img/94.webp",
+      "imagenes": [
+        "../img/95.webp",
+        "../img/96.webp",
+        "../img/97.webp"
+      ]
+    },
+    {
+      "titulo": "KODAK Portra 400",
+      "contenido": "Kodak Professional Portra 400 is a high-speed color negative film balanced for daylight. ",
+      "imagen": "../img/1.webp",
+      "imagenes": [
+        "../img/10.webp",
+        "../img/11.webp",
+        "../img/12.webp"
+      ]
+    },
+    {
+      "titulo": "ILFORD DELTA 3200",
+      "contenido": "Ilford Delta 3200 is a high-speed black-and-white film produced by Ilford Photo. It is designed for low-light conditions and situations where fast film is necessary.",
+      "imagen": "../img/2.webp",
+      "imagenes": [
+        "../img/13.webp",
+        "../img/14.webp",
+        "../img/15.webp"
+      ]
+    },
+    {
+      "titulo": "Cine Still 800T",
+      "contenido": "CineStill 800T is a unique film stock designed for motion picture use but adapted for still photography, is tungsten-balanced.",
+      "imagen": "../img/8.webp",
+      "imagenes": [
+        "../img/16.webp",
+        "../img/17.webp",
+        "../img/18.webp"
+      ]
+    },
+    {
+      "titulo": "KODAK Ektar 100",
+      "contenido": "Kodak Ektar 100 has an ISO rating of 100, making it a low-speed film. This means it is best suited for shooting in bright, daylight conditions.",
+      "imagen": "../img/4.webp",
+      "imagenes": [
+        "../img/19.webp",
+        "../img/20.webp",
+        "../img/21.webp"
+      ]
+    },
+    {
+      "titulo": "ILFORD Fp4",
+      "contenido": "Ilford FP4 Plus is a popular black-and-white film known for its fine grain, sharpness, and wide exposure latitude.",
+      "imagen": "../img/9.webp",
+      "imagenes": [
+        "../img/22.webp",
+        "../img/23.webp",
+        "../img/24.webp"
+      ]
+    },
+    {
+      "titulo": "Kodak Portra 800",
+      "contenido": "Kodak Portra 800 is a color negative film known for its versatility and ability to perform well in various lighting conditions.",
+      "imagen": "../img/6.webp",
+      "imagenes": [
+        "../img/25.webp",
+        "../img/26.webp",
+        "../img/27.webp"
+      ]
+    },
+    {
+      "titulo": "KODAK Pro Image",
+      "contenido": "Kodak Pro Image 100 is a professional-grade 35mm colour film that delivers exceptional results for your holidays. With its fine grain and vibrant colours. ",
+      "imagen": "../img/5.webp",
+      "imagenes": [
+        "../img/28.webp",
+        "../img/29.jpg",
+        "../img/30.webp"
+      ]
+    },
+    {
+      "titulo": "Kentmere 400",
+      "contenido": "35mm, ISO 400, high speed, all purpose, black & white film. Suitable for all general photography applications.",
+      "imagen": "../img/3.webp",
+      "imagenes": [
+        "../img/31.webp",
+        "../img/32.webp",
+        "../img/33.webp"
+      ]
+    },
+    {
+      "titulo": "Kodak Tx400",
+      "contenido": "The renowned Kodak 400TX is a high-speed panchromatic film released in 1954 for 35mm and 120mm format. Perfect for scenarios that require good DOF and fast shutter speeds.",
+      "imagen": "../img/34.webp",
+      "imagenes": [
+        "../img/35.webp",
+        "../img/36.webp",
+        "../img/37.webp"
+      ]
+    },
+    {
+      "titulo": "KODAK TMAX 400",
+      "contenido": "Kodak's Professional T-Max 400 is a high-speed panchromatic black and white negative film featuring a unique T-GRAIN emulsion to provide a very fine grain structure.",
+      "imagen": "../img/38.webp",
+      "imagenes": [
+        "../img/39.webp",
+        "../img/40.webp",
+        "../img/41.webp"
+      ]
+    },
+    {
+      "titulo": "KODAK TMAX 100",
+      "contenido": "Kodak T-Max 100 is an excellent professional black and white 35mm film. Kodak's patented T-grain emulsion delivers impressive levels of detail",
+      "imagen": "../img/42.webp",
+      "imagenes": [
+        "../img/43.webp",
+        "../img/44.webp",
+        "../img/45.webp"
+      ]
+    },
+    {
+      "titulo": "PENTAX ESPIO MINI",
+      "contenido": "Kodak Professional T-Max P3200 is an ultra-high-speed panchromatic black and white negative film characterized by its unique T-GRAIN emulsion.",
+      "imagen": "../img/98.webp",
+      "imagenes": [
+        "../img/99.webp",
+        "../img/100.webp",
+        "../img/101.webp"
+      ]
+      
+    },
+    {
+      "titulo": "ROLLEI 35T",
+      "contenido": "Kodak Professional T-Max P3200 is an ultra-high-speed panchromatic black and white negative film characterized by its unique T-GRAIN emulsion.",
+      "imagen": "../img/102.webp",
+      "imagenes": [
+        "../img/103.webp",
+        "../img/104.webp",
+        "../img/105.webp"
+      ]
+      
+    },
+    {
+      "titulo": "PLAUBEL MAKINA",
+      "contenido": "Kodak Professional T-Max P3200 is an ultra-high-speed panchromatic black and white negative film characterized by its unique T-GRAIN emulsion.",
+      "imagen": "../img/106.webp",
+      "imagenes": [
+        "../img/107.webp",
+        "../img/108.webp",
+        "../img/109.webp"
+      ]
+      
+    },
+    {
+      "titulo": "SUMMARON 35MM",
+      "contenido": "Kodak Professional T-Max P3200 is an ultra-high-speed panchromatic black and white negative film characterized by its unique T-GRAIN emulsion.",
+      "imagen": "../img/110.webp",
+      "imagenes": [
+        "../img/111.webp",
+        "../img/112.webp",
+        "../img/113.webp"
+      ]
+      
+    },
+    {
+      "titulo": "SUMMICRON 35MM",
+      "contenido": "Kodak Professional T-Max P3200 is an ultra-high-speed panchromatic black and white negative film characterized by its unique T-GRAIN emulsion.",
+      "imagen": "../img/114.webp",
+      "imagenes": [
+        "../img/115.webp",
+        "../img/116.webp",
+        "../img/117.webp"
+      ]
+      
+    },
+    {
+      "titulo": "FUJI TIARA",
+      "contenido": "Kodak Professional T-Max P3200 is an ultra-high-speed panchromatic black and white negative film characterized by its unique T-GRAIN emulsion.",
+      "imagen": "../img/118.webp",
+      "imagenes": [
+        "../img/119.webp",
+        "../img/120.webp",
+        "../img/121.webp"
+      ]
+      
+    }
+
+  ]
+  
