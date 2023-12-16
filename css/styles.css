@@ -121,3 +121,16 @@ footer {
     
     margin-bottom: 2rem;
   }
+  /* Agrega este bloque en tu hoja de estilos CSS */
+#selectedItemImage {
+    max-width: 100%;
+    max-height: 300px;
+    margin-top: 10px;
+  }
+  
+  /* Puedes ajustar el estilo del contenedor según tus necesidades */
+  .container mt-5 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
