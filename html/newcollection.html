@@ -61,13 +61,21 @@
 
     
 
-<div class="container mt-5">
-  <div class="row">
-    <!-- Las tarjetas se cargarán aquí mediante el script -->
-  </div>
-</div>
-
-
+    <div class="container mt-5">
+        <div class="row" id="cardContainer">
+          <!-- Las tarjetas se cargarán aquí mediante el script -->
+        </div>
+      </div>
+      
+      <div class="container mt-3">
+        <div class="row">
+          <div class="col">
+            <nav aria-label="Page navigation">
+              <ul class="pagination justify-content-center" id="pagination"></ul>
+            </nav>
+          </div>
+        </div>
+      </div>
 
 
 <script
@@ -85,47 +93,57 @@ crossorigin="anonymous"></script>
 
 
 <script>
-  $(document).ready(function() {
-    let data;
-
-    // Utiliza fetch para cargar el JSON de manera asíncrona
-    fetch('../js/viva.json')
-      .then(response => response.json())
-      .then(dataResponse => {
-        // Asigna los datos para que estén disponibles globalmente
-        data = dataResponse;
-
-        // Llama a la función para crear tarjetas y modales
-        createCardsAndModals();
-      })
-      .catch(error => console.error('Error al cargar el JSON:', error));
-
-    // Función para crear tarjetas y modales
-    function createCardsAndModals() {
-      // Itera sobre todos los elementos del JSON
-      data.forEach((card, index) => {
-        // Verifica si el índice está en el rango deseado
-        if (index >= 0 && index <= 5) {
-          // Crea una tarjeta de Bootstrap para cada elemento del JSON
-          var cardHTML = `
-            <div class="col-md-4 card-container">
-              <div class="card" data-bs-toggle="modal" data-bs-target="#modal${index + 1}">
-                <img src="${card.imagen}" class="card-img-top" alt="Imagen de la película">
-                <div class="card-body">
-                  <h5 class="card-title">${card.titulo}</h5>
-                  <p class="card-text">${card.contenido}</p>
-                  <button class="btn btn-primary" onclick="addToCart(${index})">Add to Cart</button>
-                </div>
+    $(document).ready(function() {
+      let data;
+      let currentPage = 1;
+      const cardsPerPage = 6;
+  
+      // Utiliza fetch para cargar el JSON de manera asíncrona
+      fetch('../js/viva.json')
+        .then(response => response.json())
+        .then(dataResponse => {
+          // Asigna los datos para que estén disponibles globalmente
+          data = dataResponse;
+  
+          // Llama a la función para crear tarjetas y modales
+          createCardsAndModals(currentPage);
+          updatePagination();
+        })
+        .catch(error => console.error('Error al cargar el JSON:', error));
+  
+      // Función para crear tarjetas y modales en una página específica
+      function createCardsAndModals(page) {
+        const startIndex = (page - 1) * cardsPerPage;
+        const endIndex = startIndex + cardsPerPage;
+        const cardContainer = $('#cardContainer');
+        cardContainer.empty();
+  
+        // Itera sobre los datos para crear tarjetas y modales en la página actual
+        data.slice(startIndex, endIndex).forEach((card, index) => {
+          var cardHTML = `<div class="col-md-4 card-container">
+            <div class="card" data-bs-toggle="modal" data-bs-target="#modal${startIndex + index + 1}">
+              <img src="${card.imagen}" class="card-img-top" alt="Imagen de la película">
+              <div class="card-body">
+                <h5 class="card-title">${card.titulo}</h5>
+                <p class="card-text">${card.contenido}</p>
+                <button class="btn btn-primary" onclick="addToCart(${startIndex + index})">Add to Cart</button>
               </div>
             </div>
-          `;
+          </div>`;
+          cardContainer.append(cardHTML);
+  
+          // ... Tu código de creación de modales aquí ...
+        });
 
-          // Agrega la tarjeta al contenedor
-          $('.row').append(cardHTML);
+        // Crear modales para la página actual
+        createModals(startIndex, endIndex);
+      }
 
-          // Crea el modal dinámicamente y agrégalo al final del body
-          var modalHTML = `
-            <div class="modal fade" id="modal${index + 1}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      // Función para crear modales en una página específica
+      function createModals(startIndex, endIndex) {
+        for (let i = startIndex; i < endIndex; i++) {
+          const card = data[i];
+          var modalHTML = `<div class="modal fade" id="modal${i + 1}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -133,20 +151,20 @@ crossorigin="anonymous"></script>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                    <div id="carouselExampleIndicators${index + 1}" class="carousel slide" data-bs-ride="carousel">
+                    <div id="carouselExampleIndicators${i + 1}" class="carousel slide" data-bs-ride="carousel">
                       <div class="carousel-inner">
                         <!-- Itera sobre las imágenes del carrusel -->
-                        ${card.imagenes.map((imagen, i) => `
-                          <div class="carousel-item ${i === 0 ? 'active' : ''}">
+                        ${card.imagenes.map((imagen, j) => `
+                          <div class="carousel-item ${j === 0 ? 'active' : ''}">
                             <img src="${imagen}" class="d-block w-100" alt="Imagen de la película">
                           </div>
                         `).join('')}
                       </div>
-                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators${index + 1}" data-bs-slide="prev">
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators${i + 1}" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                       </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators${index + 1}" data-bs-slide="next">
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators${i + 1}" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                       </button>
@@ -155,40 +173,48 @@ crossorigin="anonymous"></script>
                   </div>
                 </div>
               </div>
-            </div>
-          `;
+            </div>`;
 
           // Agrega el modal al final del body
           $('body').append(modalHTML);
         }
-      });
+      }
+  
+      // Función para actualizar los botones de paginación
+      function updatePagination() {
+        const paginationContainer = $('#pagination');
+        paginationContainer.empty();
+  
+        const totalPages = Math.ceil(data.length / cardsPerPage);
+  
+        for (let i = 1; i <= totalPages; i++) {
+          const activeClass = i === currentPage ? 'active' : '';
+          const li = `<li class="page-item ${activeClass}"><a class="page-link" href="#" onclick="changePage(${i})">${i}</a></li>`;
+          paginationContainer.append(li);
+        }
+      }
+  
+      // Función para cambiar la página actual
+      window.changePage = function(page) {
+        currentPage = page;
+        createCardsAndModals(currentPage);
+        updatePagination();
+      };
+  
+      // Función para manejar la adición al carrito (puedes personalizar esta función)
+      window.addToCart = function(index) {
+    // Obtiene el elemento correspondiente al índice
+    const selectedItem = data[index];
 
-      // Después de crear todos los elementos, agrega un evento de clic a cada tarjeta
-      $('.card').on('click', function() {
-        // Obtén el ID del modal correspondiente
-        var modalID = $(this).data('bs-target');
+    // Almacena el elemento seleccionado en localStorage
+    localStorage.setItem('selectedItem', JSON.stringify(selectedItem));
 
-        // Muestra el modal correspondiente
-        $(modalID).modal('show');
-      });
-    }
-
-    // Función para manejar la adición al carrito (puedes personalizar esta función)
-    window.addToCart = function(index) {
-  // Obtiene el elemento correspondiente al índice
-  const selectedItem = data[index];
-
-  // Puedes almacenar la información en localStorage o en una variable global
-  localStorage.setItem('selectedItem', JSON.stringify(selectedItem));
-
-  // Redirige a la página de checkout.html
-  window.location.href = 'checkout.html';
+    // Redirige a la página de checkout.html
+    window.location.href = 'checkout.html';
 };
 
-  });
+    });
 </script>
-
-
 
 </body>
 </html>

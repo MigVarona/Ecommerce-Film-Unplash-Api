@@ -172,3 +172,7 @@ footer {
     transition: transform 0.3s ease-out;
 }
 
+.container
+{
+    background-image: BLACK;
+}
