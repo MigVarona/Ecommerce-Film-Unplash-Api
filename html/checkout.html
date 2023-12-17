@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-GLhlTQ8iKJE3Ge5l7vZNUJkm+Or+DScQwezea0pzwoUqxyCBtL1PiB9HdL4N2x4N" crossorigin="anonymous">
     <title>Viva Film</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+ 
 
 
     
@@ -65,32 +65,105 @@
 
 
 
+<!-- ... (encabezado y otras secciones) -->
+
 <div class="container mt-5">
-  <h1 class="mb-4"></h1>
-  <div id="checkoutImages" class="row">
-    <!-- Aquí se mostrarán las imágenes del carrito -->
+  <div class="row">
+      <!-- Galería de imágenes del carrito -->
+      <div class="col-lg-8">
+          <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner" id="checkoutImages">
+                  <!-- Las imágenes se cargarán aquí -->
+              </div>
+              <!-- Ajuste del color de fondo y del icono para los controles de la galería -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                  data-bs-slide="prev" style="background-color: rgba(0, 0, 0, 0.5);">
+                  <span class="carousel-control-prev-icon text-dark" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                  data-bs-slide="next" style="background-color: rgba(0, 0, 0, 0.5);">
+                  <span class="carousel-control-next-icon text-dark" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+      </div>
+
+      <!-- Información y botón Checkout -->
+      <div class="col-lg-4 mt-lg-0 mt-4">
+          <div class="card border-white bg-white p-6 shadow-md">
+              <!-- Contenido existente -->
+              <div class="mb-2 d-flex justify-content-between">
+                  <p class="text-gray-700">Subtotal</p>
+                  <p class="text-gray-700">$129.99</p>
+              </div>
+              <div class="d-flex justify-content-between">
+                  <p class="text-gray-700">Shipping</p>
+                  <p class="text-gray-700">$4.99</p>
+              </div>
+              <hr class="my-4">
+              <div class="d-flex justify-content-between">
+                  <p class="text-lg font-bold">Total</p>
+                  <div class="">
+                      <p class="mb-1 text-lg font-bold">$134.98 USD</p>
+                      <p class="text-sm text-gray-700">including VAT</p>
+                  </div>
+              </div>
+              <!-- Uso de clases de Bootstrap para el botón Checkout -->
+              <button class="mt-6 w-100 btn btn-primary">Check out</button>
+          </div>
+      </div>
   </div>
 </div>
 
-<div class="mt-6 h-full rounded-lg border bg-white p-6 shadow-md md:mt-0 md:w-1/3 text-center">
-  <div class="mb-2 flex justify-between">
-    <p class="text-gray-700">Subtotal</p>
-    <p class="text-gray-700">$129.99</p>
+<!--footer-->
+<div class="container-fluid bg-black">
+  <div class="container">
+      <div class="footer-wrapper">
+          <div class="row">
+              <div class=" col-md-3">
+                  <p class="text-uppercase">Links</p>
+                  <ul class="list-unstyled">
+                      <li><a href="html/inspiration.html">Film inspiration</a></li>
+                      <li><a href="html/cameraslenses.html">Cameras & lenses</a></li>
+                      <li><a href="html/secondhand.html">Second hand</a></li>
+                      <li><a href="html/rent.html">Rent</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-3">
+                  <p class="text-uppercase">Support</p>
+                  <ul class="list-unstyled">
+                      <li><a href="html/contact.html">Contact Us</a></li>
+                      
+                  </ul>
+              </div>
+              <div class="col-md-3">
+                  <p class="text-uppercase">Social</p>
+                  <ul class="list-unstyled">
+                      <li><a href="#">Facebook</a></li>
+                      <li><a href="#">Twitter</a></li>
+                      <li><a href="#">Linked In</a></li>
+                      <li><a href="#">Instagram</a></li>
+                      
+                  </ul>
+              </div>
+              <div class="col-md-3">
+                  
+              </div>
+          </div>
+      </div>
+      
+      
+          <div class="text-center">
+              
+          </div>
+      </div>
   </div>
-  <div class="flex justify-between">
-    <p class="text-gray-700">Shipping</p>
-    <p class="text-gray-700">$4.99</p>
-  </div>
-  <hr class="my-4" />
-  <div class="flex justify-between">
-    <p class="text-lg font-bold">Total</p>
-    <div class="">
-      <p class="mb-1 text-lg font-bold">$134.98 USD</p>
-      <p class="text-sm text-gray-700">including VAT</p>
-    </div>
-  </div>
-  <button class="mt-6 w-full rounded-md bg-blue-500 py-1.5 font-medium text-blue-50 hover:bg-blue-600">Check out</button>
+  
 </div>
+
+
+      
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -100,20 +173,26 @@ crossorigin="anonymous"></script>
   // Cargar la información del elemento seleccionado del localStorage
   const selectedItem = JSON.parse(localStorage.getItem('selectedItem'));
 
-  // Mostrar las imágenes en el contenedor de checkoutImages
+  // Mostrar las imágenes en la galería del checkout
   if (selectedItem) {
-    const checkoutImagesContainer = document.getElementById('checkoutImages');
+      const checkoutImagesContainer = document.getElementById('checkoutImages');
 
-    // Agregar las imágenes del elemento seleccionado al contenedor
-    selectedItem.imagenes.forEach((imagen, i) => {
-      const imageHTML = `
-        <div class="col-md-4 mb-4">
-          <img src="${imagen}" class="img-fluid" alt="Imagen de la película">
-        </div>
-      `;
-      checkoutImagesContainer.innerHTML += imageHTML;
-    });
+      // Agregar las imágenes del elemento seleccionado al carousel
+      selectedItem.imagenes.forEach((imagen, i) => {
+          const imageHTML = `
+              <div class="carousel-item ${i === 0 ? 'active' : ''}">
+                  <img src="${imagen}" class="w-100" alt="Imagen de la película">
+              </div>
+          `;
+          checkoutImagesContainer.innerHTML += imageHTML;
+      });
+
+      // Inicializar el carrusel después de agregar todas las imágenes
+      const carousel = new bootstrap.Carousel(document.getElementById('carouselExample'), {
+          pause: 'hover' // Pausa la transición al pasar el ratón sobre el carrusel
+      });
   }
 </script>
 </body>
+
 </html>

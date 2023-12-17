@@ -12,51 +12,51 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-    <div class="container-fluid">
-        <a class="navbar-brand text-white" href="../index.html">VIVA FILM</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="inspiration.html">Film examples</a>
-                </li>
-                
-
-                <!-- Menú desplegable "Cameras & lenses" -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="outline: none;">
-                        Cameras
-                    </a>
-                    <div class="dropdown-menu bg-black" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item text-white" href="cameraslenses.html" style="background-color: transparent !important;">Cameras & lenses</a>
-                        <a class="dropdown-item text-white" href="secondhand.html" style="background-color: transparent !important;">Second hand</a>
-                        <a class="dropdown-item text-white" href="rent.html" style="background-color: transparent !important;">Rent</a>
-                    </div>
-                </li>
-                <!-- Menú desplegable "Film" -->
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="outline: none;">
-                      Film
-                  </a>
-                  <div class="dropdown-menu bg-black" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item text-white" href="../html/film.html" style="background-color: transparent !important;">35mm</a>
-                      <a class="dropdown-item text-white" href="../html/film-dos.html" style="background-color: transparent !important;">Medium format</a>
-                      <a class="dropdown-item text-white" href="../html/film-tres.html" style="background-color: transparent !important;">Compact cameras</a>
-                  </div>
-              </li>
-                
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="contact.html">Contact</a>
-                </li>
-                </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="../index.html">VIVA FILM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="inspiration.html">Film examples</a>
+                    </li>
+                    
+    
+                    <!-- Menú desplegable "Cameras & lenses" -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="outline: none;">
+                            Cameras
+                        </a>
+                        <div class="dropdown-menu bg-black" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item text-white" href="cameraslenses.html" style="background-color: transparent !important;">Cameras & lenses</a>
+                            <a class="dropdown-item text-white" href="secondhand.html" style="background-color: transparent !important;">Second hand</a>
+                            <a class="dropdown-item text-white" href="rent.html" style="background-color: transparent !important;">Rent</a>
+                        </div>
+                    </li>
+                    <!-- Menú desplegable "Film" -->
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="outline: none;">
+                          Film
+                      </a>
+                      <div class="dropdown-menu bg-black" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item text-white" href="../html/film.html" style="background-color: transparent !important;">35mm</a>
+                          <a class="dropdown-item text-white" href="../html/film-dos.html" style="background-color: transparent !important;">Medium format</a>
+                          <a class="dropdown-item text-white" href="../html/film-tres.html" style="background-color: transparent !important;">Compact cameras</a>
+                      </div>
+                  </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="contact.html">Contact</a>
+                    </li>
+                    </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
     
 
     
@@ -82,19 +82,28 @@ crossorigin="anonymous"></script>
 
 
 
-</body>
-</html>
 <script>
-   $(document).ready(function() {
+  $(document).ready(function() {
+    let data;
+
     // Utiliza fetch para cargar el JSON de manera asíncrona
     fetch('../js/viva.json')
       .then(response => response.json())
-      .then(data => {
-        // Selecciona los elementos del array
-        const selectedData = data.slice(0, 6);
+      .then(dataResponse => {
+        // Asigna los datos para que estén disponibles globalmente
+        data = dataResponse;
 
-        // Itera sobre los elementos seleccionados del JSON
-        selectedData.forEach((card, index) => {
+        // Llama a la función para crear tarjetas y modales
+        createCardsAndModals();
+      })
+      .catch(error => console.error('Error al cargar el JSON:', error));
+
+    // Función para crear tarjetas y modales
+    function createCardsAndModals() {
+      // Itera sobre todos los elementos del JSON
+      data.forEach((card, index) => {
+        // Verifica si el índice está en el rango deseado
+        if (index >= 0 && index <= 5) {
           // Crea una tarjeta de Bootstrap para cada elemento del JSON
           var cardHTML = `
             <div class="col-md-4 card-container">
@@ -103,15 +112,15 @@ crossorigin="anonymous"></script>
                 <div class="card-body">
                   <h5 class="card-title">${card.titulo}</h5>
                   <p class="card-text">${card.contenido}</p>
-                  <button class="btn btn-primary" onclick="addToCart(${index + 3})">Add to Cart</button>
+                  <button class="btn btn-primary" onclick="addToCart(${index})">Add to Cart</button>
                 </div>
               </div>
             </div>
           `;
-  
+
           // Agrega la tarjeta al contenedor
           $('.row').append(cardHTML);
-  
+
           // Crea el modal dinámicamente y agrégalo al final del body
           var modalHTML = `
             <div class="modal fade" id="modal${index + 1}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -146,32 +155,36 @@ crossorigin="anonymous"></script>
               </div>
             </div>
           `;
-  
+
           // Agrega el modal al final del body
           $('body').append(modalHTML);
-        });
-  
-        // Después de crear todos los elementos, agrega un evento de clic a cada tarjeta
-        $('.card').on('click', function() {
-          // Obtén el ID del modal correspondiente
-          var modalID = $(this).data('bs-target');
-  
-          // Muestra el modal correspondiente
-          $(modalID).modal('show');
-        });
-      })
-      .catch(error => console.error('Error al cargar el JSON:', error));
+        }
+      });
+
+      // Después de crear todos los elementos, agrega un evento de clic a cada tarjeta
+      $('.card').on('click', function() {
+        // Obtén el ID del modal correspondiente
+        var modalID = $(this).data('bs-target');
+
+        // Muestra el modal correspondiente
+        $(modalID).modal('show');
+      });
+    }
 
     // Función para manejar la adición al carrito (puedes personalizar esta función)
     window.addToCart = function(index) {
-      // Puedes personalizar la lógica para agregar el elemento al carrito aquí
-      // Por ejemplo, enviar una solicitud al servidor o almacenar en localStorage
-      //alert('Item added to cart!'); // Puedes personalizar este mensaje
+  // Obtiene el elemento correspondiente al índice
+  const selectedItem = data[index];
 
-      // Redirige a la página de checkout.html
-      window.location.href = 'checkout.html';
-    };
-});
+  // Puedes almacenar la información en localStorage o en una variable global
+  localStorage.setItem('selectedItem', JSON.stringify(selectedItem));
 
-    </script>
-    
+  // Redirige a la página de checkout.html
+  window.location.href = 'checkout.html';
+};
+
+  });
+</script>
+
+</body>
+</html>

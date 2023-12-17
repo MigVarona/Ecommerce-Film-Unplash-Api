@@ -133,4 +133,53 @@ footer {
     text-align: center;
     margin-top: 20px;
   }
-  
+  .carousel-control-next, .carousel-control-prev {
+    height: 15%;
+    margin-top: 130px;
+    
+  }
+  /* Estilos adicionales para el carrusel */
+#carouselExample {
+    max-width: 100%; /* Ajusta el ancho máximo del carrusel */
+    margin: 0 auto; /* Centra el carrusel en la pantalla */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde del carrusel */
+}
+
+/* Estilos para las imágenes dentro del carrusel */
+.carousel-inner img {
+    width: auto; /* Ajusta el ancho automáticamente */
+    max-height: 100%; /* Ajusta la altura máxima al 100% del contenedor */
+    margin: 0 auto; /* Centra la imagen en el contenedor */
+}
+
+/* Estilos para el contenedor de información y el botón Checkout */
+.card {
+    max-width: 100%; /* Ajusta el ancho máximo según sea necesario */
+    margin: 0 auto; /* Centra el contenedor en la pantalla */
+}
+
+.image-container {
+    position: relative;
+  }
+
+  .image-container:hover::before {
+    content: "Texto de información para esta imagen";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 75px;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
