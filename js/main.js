@@ -93,4 +93,3 @@ document.addEventListener("DOMContentLoaded", function () {
         console.error('Error al obtener fotos de la colección:', error);
     });
 });
-

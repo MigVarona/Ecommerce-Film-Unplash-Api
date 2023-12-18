@@ -168,11 +168,6 @@ footer {
     overflow: hidden;
 }
 
-.image-container img {
-    transition: transform 0.3s ease-out;
-}
 
-.container
-{
-    background-image: BLACK;
-}
+
+
