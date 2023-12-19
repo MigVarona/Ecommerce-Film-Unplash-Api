@@ -177,3 +177,6 @@ footer {
   .carousel-control-prev-icon {
     background-color: gray;
   }
+  .pagination {
+    margin-bottom: 100px;
+  }
