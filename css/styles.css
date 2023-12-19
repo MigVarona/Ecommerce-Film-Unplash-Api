@@ -171,3 +171,9 @@ footer {
 
 
 
+  .carousel-control-next-icon {
+    background-color: gray;
+  }
+  .carousel-control-prev-icon {
+    background-color: gray;
+  }
